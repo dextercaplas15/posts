@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editing Posts | Travel Stylesheets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Didact+Gothic|Great+Vibes|Lato|Montserrat|Open+Sans|Oswald|Questrial|Six+Caps" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Mallanna|Muli|Nunito|Poppins|Quattrocento+Sans|Qwigley|Tenor+Sans" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="wrap__content">
+	<div class="container">
+		<h1 class="posttitle">Editing Posts | Travel Stylesheets</h1>
+		<p>This is my second second post about how to edit your blog posts, making use of the HTML view, and using HTML and CSS so posts will appear visually appealing. For this second post, I'll be showing you how I create a box with two columns where I post a photo and text in one line. I make use of floats and at the same time defining the widths of every element. If you're using Bootstrap or if the Wordpress theme that you are using for your blog uses Bootstrap, it's easier to achieve the result desired. Just simple assign the class required to an HTML tag. For those who does not what Bootstrap is, it is an open source toolkit  and a front-end library for developing HTML, CSS, and JavaScript and allows developers to build a responsive and mobile-ready projects on the web. When buying or choosing a Wordpress theme for your blog, the documentation should include a note about Bootstrap being incorporated.</p>
+		<br>
+		<h2 class="section-title">TWO COLUMN IMAGES</h2>
+		<h3 class="blocktitle">Using Bootstrap</h3>
+		<p>For those website where Bootstrap is incorporated, you can simply add the class "col-md-6" for desktop or wider screens and "col-xs-12" for mobile size. Create a main div tag and simply create two other div tags with that class and input the image element.</p>
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<img src="images/romania_four.jpg">
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<img src="images/romania_eleven.jpg">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<h3 class="blocktitle">Without Bootstrap</h3>
+		<p>When posting multiple images especially three images, I always create a block for a two-column image and one block for a single image. This saves space and at the same time having smaller images makes loading speed better. For mobile, it's okay okay to either use this or not. Personally, I'd keep all images at 100% width for better visibility.</p>
+		<div class="twoColumn-imageblock">
+			<div class="left-image">
+				<img src="images/romania_four.jpg">
+			</div>
+			<div class="right-image">
+				<img src="images/romania_eleven.jpg">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<p>I created a main div tag and assigned a class "twoColumn-imageblock" where the two photos will be placed. I then created two other div tags and assigned different classes for each "left-image" and "right-image". To create that two-column design using CSS, the width of the div tags were both set to 50% and float was set to left. Floating both to the left should be okay since width are similar and it will still take up the entire block or main div. I've also added padding on the left and right side to create a space in between.</p>
+		<h2 class="section-title">TEXT AND IMAGE</h2>
+		<h3 class="blocktitle">Using Bootstrap</h3>
+		<p>For those website where Bootstrap is incorporated, you can simply add the class "col-md-6" for desktop or wider screens and "col-xs-12" for mobile size. Create a main div tag and simply create two other div tags with that class and input the image element.</p>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<img src="images/romania_four.jpg">
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<h3 class="itemtitle">ATTRACTION NAME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<p>And this how it looks like when you add custom styles even using Bootstrap.</p>
+		<div class="row bootstrapped">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<img src="images/romania_four.jpg">
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<h3 class="itemtitle">ATTRACTION NAME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<h3 class="blocktitle">Without Using Bootstrap</h3>
+		<p>For those website where Bootstrap is incorporated, you can simply add the class "col-md-6" for desktop or wider screens and "col-xs-12" for mobile size. Create a main div tag and simply create two other div tags with that class and input the image element.</p>
+		<div class="photo-description">
+			<div class="image-item">
+				<img src="images/romania_four.jpg">
+			</div>
+			<div class="image-description">
+				<h3 class="itemtitle">ATTRACTION NAME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<h2 class="section-title">SPECIAL BUTTONS</h2>
+		<p>Sometimes, I wanted my call to action buttons look better than just simply looking like a box and changes background color when hovered. There are times when I include a photo and text where users can click on. I wouldn't really use Bootstrap when doing this since the classes were assigned a margin and padding, both will have that space in between. Unless you're okay with it, you can use Bootstrap and assign classes. Below is how I create some of the buttons.</p>
+		<div class="special-button">
+			<div class="image-holder">
+				<img src="images/romania_four.jpg">
+			</div>
+			<a href="">
+				<div class="call-to-action">
+					<h4>Click here for more information</h4>
+				</div>
+			</a>
+			<div class="clearfix"></div>
+		</div>
+		<p>In this example, I've specifically assigned width and height to the image holder and call to action div tags. I've also floated them both to the left so they're connected together without any spaces in between. You can float the other to the right but width of both must be equal to 100% or else they'll end up far apart from each other. I've again added some custom style to the image and to the call to action box. I've also used a CSS pseudo-clas which is hover. What this does is simply changing the background color or any styles that you may want to execute when the mouth is placed over the text or box. </p>
+	</div>
+</div>
+</body>
+</html>

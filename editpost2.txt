@@ -1,0 +1,60 @@
+EDITING POSTS: FLOATS AND WIDTH
+
+This is my second second post about how to edit your blog posts, making use of the HTML view, and using HTML and CSS so posts will appear visually appealing. For this second post, I'll be showing you how I create a box with two columns where I post a photo and text in one line. I make use of floats and at the same time defining the widths of every element. If you're using Bootstrap or if the Wordpress theme that you are using for your blog uses Bootstrap, it's easier to achieve the result desired. Just simple assign the class required to an HTML tag. For those who does not what Bootstrap is, it is an open source toolkit  and a front-end library for developing HTML, CSS, and JavaScript and allows developers to build a responsive and mobile-ready projects on the web. When buying or choosing a Wordpress theme for your blog, the documentation should include a note about Bootstrap being incorporated.
+
+Aside from the usual styling or CSS properties that I've previously tackled such as color, font-size, padding, and background-color, I'll be introducing a new one which is float. The float property defines the position of an element is a certain block. You can either have it on the left or right, have both items in one block where one is flushed to the left and the other to the right, or none which is best used for mobile views.  When using the float, also define the width of an element especially when you're floating two elements in one block. I really like using floats when customizing my posts especiallyn when putting an image and a description in one single block. 
+
+Here are some few styles that you can do with floats.
+
+1. TWO COLUMN IMAGES
+
+When posting multiple images especially three images, I always create a block for a two-column image and one block for a single image. This saves space and at the same time having smaller images makes loading speed better. For mobile, it's okay okay to either use this or not. Personally, I'd keep all images at 100% width for better visibility. 
+For those website where Bootstrap is incorporated, you can simply add the class "col-md-6" for desktop or wider screens and "col-xs-12" for mobile size. Create a main div tag and simply create two other div tags with that class and input the image element.
+
+For this example, I did not use Bootstrap classes. You can check my Github repository for the Bootstrap classes that I used. Going back, I created a main div tag and assigned a class "twoColumn-imageblock" where the two photos will be placed. I then created two other div tags and assigned different classes for each "left-image" and "right-image". To create that two-column design using CSS, the width of the div tags were both set to 50% and float was set to left. Floating both to the left should be okay since width are similar and it will still take up the entire block or main div. I've also added padding on the left and right side to create a space in between.
+
+2. TEXT AND IMAGE
+
+Floats is also useful when you want an image and text in the same block without the text wrapping around the image. I've done this on a previous post layout where the photo of the attraction is on the left and the description is on the right and having the image stay on the right and the description on the left alternately. For those website where Bootstrap is incorporated, you can assign a class "col-md-4" for the image and "col-md-8" for the description. To ensure that it is mobile responsive, assign a class "col-xs-12" to both. After assigning classes, you can customize it further by the targeting the class of the main div to the class assigned to either photo or description.
+
+
+
+For this example, I've again placed the two div tags for image and description within a main div tag with a class "photo-description". The div tag with a class "image-item" holds the image was assigned a 30% width and is floated to the right while the div tag with the class "image-description" was assigned a 70% width and is floated to the right.
+I usually do this when the width of two elements are different. Additionally, I've added additional styles to the image such as the border-radius being 50% and defining the height and width to create that circular design.
+
+3. SPECIAL BUTTONS
+
+Sometimes, I wanted my call to action buttons look better than just simply looking like a box and changes background color when hovered. There are times when I include a photo and text where users can click on. I wouldn't really use Bootstrap when doing this since the classes were assigned a margin and padding, both will have that space in between. Unless you're okay with it, you can use Bootstrap and assign classes. Below is how I create some of the buttons.
+
+In this example, I've specifically assigned width and height to the image holder and call to action div tags. I've also floated them both to the left so they're connected together without any spaces in between. You can float the other to the right but width of both must be equal to 100% or else they'll end up far apart from each other. I've again added some custom style to the image and to the call to action box. I've also used a CSS pseudo-clas which is hover. What this does is simply changing the background color or any styles that you may want to execute when the mouth is placed over the text or box. 
+
+REMINDERS AND NOTES
+
+1. I've used a class clearfix. The clear property is very important is must be used after elements are floated. If this is not used, the elements  below it will treat the floated items as if it is non-existent and will overlap, which is why I used the clear property.
+
+2. Do not add the styling on the div tag. Always place it on your custom CSS file. Doing such can affect loading time and is not a good SEO practice. 
+
+3. Why assign class and wrap images in a div tag when you can just insert them both? Doing that is okay, but I prefer this method especially when images are sized differently. 
+
+4. Regarding Bootstrap, do not add it on your head tag if you do not have one. Sometimes, it will affect the website itself and will apply modifications that you would not want to do. To simply tell you, it can ruin your website.
+
+Hope this one has been helpful. You can check out W3Schools for more information about CSS. Be creative and just find that style that you wanted to have on your website other than what is being executed by the CSS file of your website. You can also check the links below. These will redirect you to the visual presentation of the examples, to my github repository where you can check the codes, and some helpful resources.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

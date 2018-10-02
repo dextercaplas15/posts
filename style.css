@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+}
+.posttitle {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #ed65b2;
+}
+.section-title {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 30px;
+	color:grey;
+	border-bottom: 1px dashed #ed65b2;
+	padding-bottom: 5px;
+}
+.blocktitle {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #ed65b2;
+}
+p {
+	font-family: 'Questrial';
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 1.2px;
+	color: grey;
+}
+/*HERE'S WHERE THE NEW STYLES ARE*/
+.clearfix::after {
+	clear:both;
+	display: table;
+	content:"";
+}
+img {
+	max-width: 100%;
+}
+.left-image, 
+.right-image {
+	width:50%;
+	float:left;
+}
+.left-image {
+	padding-right: 10px;
+}
+.right-image {
+	padding-left: 10px;
+}
+.bootstrapped img {
+	border-radius: 50%;
+	width:300px;
+	height: 290px;
+	object-fit: cover;
+	border:2px solid #ed65b2;
+	padding: 8px;
+}
+.bootstrapped .itemtitle {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #ed65b2;
+	border-bottom: 1px dashed #dbdbdb;
+	padding-bottom: 5px;
+}
+/*second example*/
+.image-item {
+	width:30%;
+	float: left;
+	text-align: center;	
+}
+.image-item img {
+	border-radius: 50%;
+	width:300px;
+	height: 290px;
+	object-fit: cover;
+	border:2px solid #ed65b2;
+	padding: 8px;
+}
+.image-description {
+	width:70%;
+	float: right;
+	padding-left: 20px;
+}
+.image-description .itemtitle {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #ed65b2;
+	border-bottom: 1px dashed #dbdbdb;
+	padding-bottom: 5px;
+}
+.special-button .image-holder {
+	float: left;
+}
+.special-button .image-holder,
+.special-button .image-holder > img  {
+	height: 100px;
+	width: 180px;
+	object-fit: cover;
+}
+.special-button a > .call-to-action {
+	height: 100px;
+	width:300px;
+}
+.special-button a {
+	float: left;
+	margin-top: 0px;
+	font-family: Oswald;
+	text-transform: uppercase;
+	color: grey;
+}
+.special-button a > .call-to-action {
+	background-color: #dbdbdb;
+	float: left;
+	padding:20px;
+}
+.special-button a > .call-to-action:hover {
+	background-color: #ed65b2;
+	color: #fff;
+}
+@media(max-width:767px) {
+	.left-image, 
+	.right-image {
+		width:100%;
+		float:none;
+		display: block;
+		padding:0px;
+		margin-bottom: 20px;
+	}
+	.bootstrapped img {
+		border-radius: unset;
+		width: 100%;
+		height: auto;
+		border:unset;
+		padding: 0px;
+	}
+	.image-item {
+		width:100%;
+		float: none;
+		text-align: center;	
+	}
+	.image-item img {
+		border-radius: unset;
+		width:100%;
+		height: auto;
+		border:unset;
+		padding: 0px;
+	}
+	.image-description {
+		width:100%;
+		float: none;
+		padding-left: 0px;
+	}
+}
